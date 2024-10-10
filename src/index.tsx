@@ -10,6 +10,6 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <App placeAmount={Config.PlacesCount}/>
+    <App placeAmount={Config.placeAmount}/>
   </React.StrictMode>
 );
