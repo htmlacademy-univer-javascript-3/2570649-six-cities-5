@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 
 import App from './components/app/app';
-import Config from './mock';
+import { Config } from './mock';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -10,6 +10,6 @@ const root = ReactDOM.createRoot(
 
 root.render(
   <React.StrictMode>
-    <App placeAmount={Config.PlacesCount}/>
+    <App placeAmount={Config.placeAmount}/>
   </React.StrictMode>
 );
