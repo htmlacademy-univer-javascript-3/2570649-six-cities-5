@@ -1,5 +1,16 @@
-const Config = {
+export const Config = {
     placeAmount: 12,
-} as const;
+};
 
-export default Config
+export enum AppRoute {
+    Root = '/',
+    Login = '/login',
+    Favorites = '/favorites',
+    Offer = '/offer/:id',
+}
+
+export enum AuthStatus {
+    Unknown,
+    NotAuthenticated,
+    Authenticated,
+}
